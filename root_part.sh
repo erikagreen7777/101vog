@@ -2,8 +2,6 @@
 
 ### We set up the kerberos config file to access to 42's kerberos server.
 
-#vogsphere@vogsphere.le-101.fr:intra/2018/activities/ft_ls/egreen
-
 cat >> /etc/krb5.conf << EOF
 [libdefaults]
     default_realm = LE-101.FR
