@@ -2,8 +2,6 @@
 
 ### We set up the kerberos config file to access to 42's kerberos server.
 
-#vogsphere@vogsphere.le-101.fr:intra/2018/activities/ft_ls/egreen
-
 cat >> /etc/krb5.conf << EOF
 [libdefaults]
     default_realm = LE-101.FR
@@ -14,8 +12,8 @@ cat >> /etc/krb5.conf << EOF
     allow_weak_crypto = true
 [realms]
     LE-101.FR = {
-        kdc = kerberos.le-101.fr
-        admin_server = kerberos.le-101.fr
+        kdc = kerberos-1.le-101.fr
+        admin_server = kerberos-1.le-101.fr
         default_domain = le-101.fr
         default_lifetime = 7d
         ticket_lifetime = 7d
